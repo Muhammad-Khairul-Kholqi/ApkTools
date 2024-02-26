@@ -2,21 +2,45 @@ import React from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Style/StyleHome.css';
+import { Link } from "react-router-dom";
 
-import Ilustrasi from './Assets/ilustrasi2.png'
+import Ilustrasi from './Assets/ilustrasi.jpg'
+import { GoArrowRight } from "react-icons/go";
 
 const Home = () => {
     AOS.init();
     return(
         <div>
-            <div className = "mt-[85px] text-center" >
-                <h1 className="title text-[30px] font-bold"
-                data-aos="fade-down"
-                data-aos-duration="1500"><span className="text-[#3C66D4] text-[50px]">GC</span> Tools</h1>
+            <div className = "mt-[85px] text-center px-[30px]" >
+                <div>
+                    <h1 className="title text-[35px] font-bold mt-[10px]" 
+                    data-aos="fade-down" 
+                    data-aos-duration="1500">
+                        Enjoyable Website <br /> Creation with Free Tools
+                    </h1>
+                    <p className = "description mt-[10px] text-[18px]" 
+                    data-aos = "fade-down" 
+                    data-aos-duration = "1000" >
+                        <span>Make</span> your <span>website</span> creation experience <span>enjoyable</span> with free tools
+                    </p>
+                </div>
 
-                <p className="description text-[18px] px-[30px] mt-[10px]" 
-                data-aos="fade-down"
-                data-aos-duration="1000">Make your website creation experience enjoyable with free tools.</p>
+                <Link to="">
+                    <div className = "flex justify-center mt-[20px]">
+                        <button className = "flex items-center gap-[5px] py-[7px] px-[10px] border-solid border-2 border-black rounded-[30px]"
+                        data-aos = "zoom-in"
+                        data-aos-duration = "1000" >
+                            <p>Get Started</p>
+                            <GoArrowRight id="arrow" className="icon-arrow text-[20px] mt-[1px]" />
+                        </button>
+                    </div>
+                </Link>
+
+                <div div className = "flex justify-center mt-[20px]"
+                data-aos = "zoom-in-up"
+                data-aos-duration = "1500" >
+                    <img className="w-[600px] w-full" src={Ilustrasi} />
+                </div>
             </div>
         </div>
     )

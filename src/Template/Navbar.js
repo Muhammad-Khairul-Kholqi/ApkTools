@@ -109,7 +109,7 @@ const Navbar = () => {
                         </div>
                     )}
                 </div>
-                <div className="hidden">
+                <div className="hidden text-[25px]">
                     <IoMenu id="hamburger-menu" style={{ display: showNav ? 'none' : 'block' }} onClick={toggleNav} />
                     <IoClose id="close" style={{ display: showNav ? 'block' : 'none' }} onClick={toggleNav} />
                 </div>
