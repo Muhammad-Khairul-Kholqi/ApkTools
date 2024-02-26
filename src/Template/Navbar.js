@@ -1,17 +1,25 @@
-import {React, useState} from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import '../Style/StyleNavbar.css';
 
 import Logo from '../Assets/logo.png';
 import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
-    const [DropDownTools, setDropDownTools] = useState(false);
+    const [showNav, setShowNav] = useState(false);
 
-    const toggleDropdownTools = () => {
-        setDropDownTools(!DropDownTools);
+    // Fungsi untuk menampilkan/menyembunyikan navbar saat ikon di klik
+    const toggleNav = () => {
+        setShowNav(!showNav);
     };
 
+    const [dropDownTools, setDropDownTools] = useState(false);
     const [dropDownLanguage, setDropDownLanguage] = useState(false);
+
+    const toggleDropdownTools = () => {
+        setDropDownTools(!dropDownTools);
+    };
 
     const toggleDropdownLanguage = () => {
         setDropDownLanguage(!dropDownLanguage);
@@ -19,106 +27,79 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="flex flex-wrap justify-between items-center py-[15px] px-[5%]">
+            <div className = "navbar flex flex-wrap justify-between items-center py-[15px] px-[5%]" >
                 <div>
-                    {/* <Link to="/"> */}
-                        <div className="flex gap-[5px] items-center cursor-pointer">
-                            <img className="w-[40px]" src={Logo} alt="Logo" />
-                            <p className="text-[#3C66D4] text-[15px] leading-[17px] font-semibold">GC <br /> Tools</p>
-                        </div>
-                    {/* </Link> */}
+                    <div className="flex gap-[5px] items-center cursor-pointer">
+                        <img className="w-[40px]" src={Logo} alt="Logo" />
+                        <p className="text-[#3C66D4] text-[15px] leading-[17px] font-semibold">GC <br /> Tools</p>
+                    </div>
                 </div>
 
-                <div className="flex gap-[20px] items-center">
-                    {/* <Link> */}
-                        <div>
-                            <p>Home</p>
-                        </div>
-                    {/* </Link> */}
-
-                    {/* <Link> */}
-                        <div>
-                            <p>All</p>
-                        </div>
-                    {/* </Link> */}
-
-                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownTools}>
-                        <p className="admin">Tools</p>
-                        <IoMdArrowDropdown className={`transition-transform transform ${DropDownTools ? 'rotate-180' : ''}`}/>
+                <div div className = {`navbar-nav-link flex gap-[20px] items-center ${showNav ? 'show' : ''}`} >
+                    <div className="first">
+                        <p>Home</p>
                     </div>
 
-                    {DropDownTools && (
-                        <div className="absolute top-full right-0 mr-[170px] mt-[-15px] bg-white shadow-md rounded-md p-5 text-[15px] z-10">
-                            <ul>
-                                <li>
-                                    {/* <Link to="/account-admin"> */}
-                                        <div className = "" >
-                                            <p>Form</p>
-                                        </div>
-                                    {/* </Link> */}
-                                </li>
-                                <li>
-                                    {/* <Link to = "/signin" > */}
-                                        <div className = "mt-[5px]" >
-                                            <p>Button</p>
-                                        </div>
-                                    {/* </Link> */}
-                                </li>
+                    <div>
+                        <p>All</p>
+                    </div>
 
-                                <li>
-                                    {/* <Link to = "/signin" > */}
-                                        <div className = "mt-[5px]" >
-                                            <p>Navbar</p>
-                                        </div>
-                                    {/* </Link> */}
-                                </li>
+                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownTools}>
+                        <p className="tools">Tools</p>
+                        <IoMdArrowDropdown className={`transition-transform transform ${dropDownTools ? 'rotate-180' : ''}`} />
+                    </div>
 
-                                <li>
-                                    {/* <Link to = "/signin" > */}
-                                        <div className = "mt-[5px]" >
-                                            <p>Card</p>
-                                        </div>
-                                    {/* </Link> */}
-                                </li>
+                    {dropDownTools && (
+                        <div className="dropdown-tools absolute top-full right-0 mr-[140px] mt-[-15px] bg-white shadow-md rounded-md p-5 text-[15px] z-10">
+                            <ul className="flex items-center gap-[20px]">
+                                <div>
+                                    <li>
+                                        <p>Form</p>
+                                    </li>
+                                    <li>
+                                        <p>Card</p>
+                                    </li>
+                                </div>
+
+                                <div>
+                                    <li>
+                                        <p>Navbar</p>
+                                    </li>
+
+                                    <li>
+                                        <p>Button</p>
+                                    </li>
+                                </div>
                             </ul>
                         </div>
                     )}
 
-                    <div div className = "flex gap-[5px] items-center cursor-pointer"
-                    onClick = {toggleDropdownLanguage} >
-                        <p className="admin">Framework</p>
-                        <IoMdArrowDropdown className={`transition-transform transform ${dropDownLanguage ? 'rotate-180' : ''}`}/>
+                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownLanguage}>
+                        <p className="framework">Framework</p>
+                        <IoMdArrowDropdown className={`transition-transform transform ${dropDownLanguage ? 'rotate-180' : ''}`} />
                     </div>
 
                     {dropDownLanguage && (
-                        <div className="absolute top-full right-0 mr-[70px] mt-[-15px] bg-white shadow-md rounded-md p-5 text-[15px] z-10">
+                        <div className="absolute top-full right-0 mr-[40px] mt-[-15px] bg-white shadow-md rounded-md p-5 text-[15px] z-10">
                             <ul>
                                 <li>
-                                    {/* <Link to="/account-admin"> */}
-                                        <div className = "" >
-                                            <p>Laravel</p>
-                                        </div>
-                                    {/* </Link> */}
+                                    <p>Laravel</p>
                                 </li>
                                 <li>
-                                    {/* <Link to = "/signin" > */}
-                                        <div className = "mt-[5px]" >
-                                            <p>React Js</p>
-                                        </div>
-                                    {/* </Link> */}
+                                    <p>React Js</p>
                                 </li>
 
                                 <li>
-                                    {/* <Link to = "/signin" > */}
-                                        <div className = "mt-[5px]" >
-                                            <p>Vue Js</p>
-                                        </div>
-                                    {/* </Link> */}
+                                    <p>Vue Js</p>
                                 </li>
                             </ul>
                         </div>
                     )}
                 </div>
+                <div className="hidden">
+                <IoMenu id="hamburger-menu" style={{ display: showNav ? 'none' : 'block' }} onClick={toggleNav} />
+                <IoClose id="close" style={{ display: showNav ? 'block' : 'none' }} onClick={toggleNav} />
+            </div>
             </div>
         </div>
     );
