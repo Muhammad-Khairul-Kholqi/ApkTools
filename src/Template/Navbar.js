@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className = "navbar flex flex-wrap justify-between items-center py-[15px] px-[5%]" >
+            <div div className = "navbar flex flex-wrap justify-between items-center py-[15px] px-[5%] fixed top-0 w-full bg-white shadow-md z-10" >
                 <div>
                     <Link to="/">
                         <div className="flex gap-[5px] items-center cursor-pointer">
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </div>
 
                     {dropDownTools && (
-                        <div className="dropdown-tools absolute top-full right-0 mr-[140px] mt-[-500px] bg-white shadow-md rounded-md p-5 text-[15px] z-10">
+                        <div className = "dropdown-tools absolute top-full right-0 mr-[140px] mt-[-20px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul className="flex items-center gap-[20px]">
                                 <div>
                                     <li>
@@ -87,7 +87,7 @@ const Navbar = () => {
                     </div>
 
                     {dropDownLanguage && (
-                        <div className="dropdown-language absolute top-full right-0 mr-[40px] mt-[-500px] bg-white shadow-md rounded-md p-5 text-[15px] z-10">
+                        <div className = "dropdown-language absolute top-full right-0 mr-[40px] mt-[-20px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul>
                                 <li>
                                     <p>Laravel</p>
