@@ -1,13 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from './Template/Navbar'
 
 function App() {
   return (
     <div>
-      <div className = "fixed z-10 inset-x-0 top-0 shadow-md" >
-        <Navbar />
-      </div>
+      <Router>
+          <div>
+            <Navbar />
+          </div>
+      </Router>
     </div>
   );
 }
