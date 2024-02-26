@@ -39,7 +39,7 @@ const Home = () => {
                 <div div className = "flex justify-center mt-[20px]"
                 data-aos = "zoom-in-up"
                 data-aos-duration = "1500" >
-                    <img className="w-[600px] w-full" src={Ilustrasi} />
+                    <img className="max-w-[600px] w-full" src={Ilustrasi} />
                 </div>
             </div>
         </div>
