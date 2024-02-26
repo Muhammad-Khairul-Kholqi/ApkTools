@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div div className = "navbar flex flex-wrap justify-between items-center py-[15px] px-[5%] fixed top-0 w-full bg-white shadow-md z-10" >
+            <div className = "navbar flex flex-wrap justify-between items-center py-[15px] px-[5%] fixed top-0 w-full bg-white shadow z-10" >
                 <div>
                     <Link to="/">
                         <div className="flex gap-[5px] items-center cursor-pointer">
@@ -38,10 +38,16 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div div className = {`navbar-nav-link flex gap-[20px] items-center ${showNav ? 'show' : ''}`} >
+                <div className = {`navbar-nav-link flex gap-[20px] items-center ${showNav ? 'show' : ''}`} >
                         <div className="first">
                             <Link>
                                 <p>Home</p>
+                            </Link>
+                        </div>
+
+                        <div>
+                            <Link>
+                                <p>About Us</p>
                             </Link>
                         </div>
 

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from './Template/Navbar'
+import Home from "./Home";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <div>
             <Navbar />
           </div>
+          <div><Home /></div>
       </Router>
     </div>
   );

@@ -1,3 +1,9 @@
+@media screen and (max-width: 570px) {
+    .navbar-nav-link p {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .navbar-nav-link {
         display: none;
@@ -5,13 +11,13 @@
         position: absolute;
         top: 63px;
         right: 0;
-        height: 180px;
+        height: 220px;
         width: 150px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-bottom-left-radius: 5px;
+        background-color: #fff;
         z-index: 1000;
         border-top: 3px solid #3C66D4;
-        /* text-align: left; */
     }
 
     .navbar-nav-link.show {
