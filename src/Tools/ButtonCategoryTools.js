@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const ButtonCategoryTools = () => {
     return(
         <div>
-            <div className="flex flex-wrap justify-center gap-[15px] px-[30px]">
+            <div className="flex flex-wrap justify-center gap-[15px]">
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Button 
                         </p>
@@ -14,7 +14,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link to="/category-forms">
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Form 
                         </p>
@@ -22,7 +22,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Navbar 
                         </p>
@@ -30,7 +30,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Card 
                         </p>
@@ -38,7 +38,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Dark Mode 
                         </p>
@@ -46,7 +46,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Form Login 
                         </p>
@@ -54,7 +54,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Input 
                         </p>
@@ -62,7 +62,7 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             Loaders 
                         </p>
@@ -70,9 +70,17 @@ const ButtonCategoryTools = () => {
                 </Link>
 
                 <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]" data-aos="zoom-in" data-aos-duration="1500">
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                         <p>
                             DOM Js 
+                        </p>
+                    </div>
+                </Link>
+
+                <Link>
+                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
+                        <p>
+                            UI/UX
                         </p>
                     </div>
                 </Link>
