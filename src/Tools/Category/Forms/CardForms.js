@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import ImgSementara from '../../../Assets/sementara.webp'
 import { GoClock } from "react-icons/go";
 import { GoPencil } from "react-icons/go";
 
 const CardForms = () => {
+    AOS.init();
     return(
         <div>
             <div className="flex justify-center flex-wrap gap-[30px] py-[50px] px-[30px]">
                     <Link>
-                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" >
+                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" data-aos="fade-up" data-aos-duration="1500">
                             <div>
                                 <img className="hover:scale-105 duration-700 rounded-t-[5px]" src={ImgSementara} />
                             </div>
@@ -32,7 +35,7 @@ const CardForms = () => {
                     </Link>
 
                     <Link>
-                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" >
+                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" data-aos="fade-up" data-aos-duration="1500">
                             <div>
                                 <img className="hover:scale-105 duration-700 rounded-t-[5px]" src={ImgSementara} />
                             </div>
@@ -54,7 +57,7 @@ const CardForms = () => {
                     </Link>
 
                     <Link>
-                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" >
+                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" data-aos="fade-up" data-aos-duration="1500">
                             <div>
                                 <img className="hover:scale-105 duration-700 rounded-t-[5px]" src={ImgSementara} />
                             </div>
@@ -76,7 +79,7 @@ const CardForms = () => {
                     </Link>
 
                     <Link>
-                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" >
+                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" data-aos="fade-up" data-aos-duration="1500">
                             <div>
                                 <img className="hover:scale-105 duration-700 rounded-t-[5px]" src={ImgSementara} />
                             </div>
@@ -98,7 +101,7 @@ const CardForms = () => {
                     </Link>
 
                     <Link>
-                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" >
+                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" data-aos="fade-up" data-aos-duration="1500">
                             <div>
                                 <img className="hover:scale-105 duration-700 rounded-t-[5px]" src={ImgSementara} />
                             </div>
@@ -120,7 +123,7 @@ const CardForms = () => {
                     </Link>
 
                     <Link>
-                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" >
+                        <div className = "bg-white border-solid border-[1px] border-gray-500 p-[10px] rounded-[5px]" data-aos="fade-up" data-aos-duration="1500">
                             <div>
                                 <img className="hover:scale-105 duration-700 rounded-t-[5px]" src={ImgSementara} />
                             </div>

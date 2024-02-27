@@ -9,7 +9,9 @@ const Forms = () => {
     return (
         <div>
             <div className="mt-[100px]">
-                <div className="text-center text-[40px] mb-[10px] font-bold">
+                <div div className = "text-center text-[40px] mb-[10px] font-bold"
+                data-aos = "fade-down" 
+                data-aos-duration = "1500" >
                     Forms
                 </div>
 
