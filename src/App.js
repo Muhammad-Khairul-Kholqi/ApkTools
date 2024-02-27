@@ -5,6 +5,9 @@ import Navbar from './Template/Navbar'
 import Home from './Home';
 import CategoryTools from './Tools/CategoryTools';
 
+// category tools
+import Forms from './Tools/Category/Forms/Forms';
+
 const DefaultNavbar = ({children}) => {
   return (
     <div>
@@ -38,6 +41,17 @@ function App() {
                     </DefaultNavbar>
                   }
               />
+
+              {/* category tools */}
+              <Route
+                  path = "/category-forms"
+                  element={
+                    <DefaultNavbar>
+                      <Forms />
+                    </DefaultNavbar>
+                  }
+              />
+
           </Routes>
       </Router>
     </div>
