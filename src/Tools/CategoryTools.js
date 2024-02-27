@@ -16,7 +16,7 @@ const CategoryTools = () => {
                 <p className="text-[18px] mt-[10px]">Good Luck :)</p>
             </div>
 
-             <div className="flex justify-center">
+             <div className="flex justify-center mb-[20px]">
                 <img className="w-[50px]" src={Logo} draggable="false" />
             </div>
         </div>

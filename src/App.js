@@ -7,6 +7,7 @@ import CategoryTools from './Tools/CategoryTools';
 
 // category tools
 import Forms from './Tools/Category/Forms/Forms';
+import CodeForms from "./Tools/Category/Forms/CodeForms";
 
 const DefaultNavbar = ({children}) => {
   return (
@@ -48,6 +49,15 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <Forms />
+                    </DefaultNavbar>
+                  }
+              />
+
+              <Route
+                  path = "/code-desc-forms"
+                  element={
+                    <DefaultNavbar>
+                      <CodeForms />
                     </DefaultNavbar>
                   }
               />
