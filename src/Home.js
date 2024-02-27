@@ -36,12 +36,13 @@ const Home = () => {
                     </div>
                 </Link>
 
-                <div div className = "flex justify-center mt-[20px]"
+                <div div className = "flex justify-center mt-[5px]"
                 data-aos = "zoom-in-up"
                 data-aos-duration = "1500" >
-                    <img className="max-w-[600px] w-full" src={Ilustrasi} />
+                    <img className="max-w-[600px] w-full" src={Ilustrasi} draggable="false" />
                 </div>
             </div>
+
         </div>
     )
 }

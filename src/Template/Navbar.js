@@ -14,23 +14,17 @@ const Navbar = () => {
         setShowNav(!showNav);
     };
 
-    // dropdown menu
-    const [dropDownTools, setDropDownTools] = useState(false);
-    const [dropDownLanguage, setDropDownLanguage] = useState(false);
+    const [dropDownFramework, setDropDownFramework] = useState(false);
 
-    const toggleDropdownTools = () => {
-        setDropDownTools(!dropDownTools);
-    };
-
-    const toggleDropdownLanguage = () => {
-        setDropDownLanguage(!dropDownLanguage);
+    const toggleDropdownFramework = () => {
+        setDropDownFramework(!dropDownFramework);
     };
 
     return (
         <div>
             <div className = "navbar flex flex-wrap justify-between items-center py-[15px] px-[5%] fixed top-0 w-full bg-white shadow z-10" >
                 <div>
-                    <Link to="/">
+                    <Link to="/"> 
                         <div className="flex gap-[5px] items-center cursor-pointer">
                             <img className="w-[40px]" src={Logo} alt="Logo" />
                             <p className="text-[#3C66D4] text-[15px] leading-[17px] font-semibold">GC <br /> Tools</p>
@@ -40,70 +34,46 @@ const Navbar = () => {
 
                 <div className = {`navbar-nav-link flex gap-[20px] items-center ${showNav ? 'show' : ''}`} >
                         <div className="first">
-                            <Link>
+                            <Link to="/">
                                 <p>Home</p>
                             </Link>
                         </div>
 
                         <div>
-                            <Link>
-                                <p>About Us</p>
-                            </Link>
-                        </div>
-
-                        <div>
-                            <Link>
+                            <Link to="">
                                 <p>All</p>
                             </Link>
                         </div>
 
-                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownTools}>
-                        <p className="tools">Tools</p>
-                        <IoMdArrowDropdown className={`transition-transform transform ${dropDownTools ? 'rotate-180' : ''}`} />
-                    </div>
-
-                    {dropDownTools && (
-                        <div className = "dropdown-tools absolute top-full right-0 mr-[140px] mt-[-20px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
-                            <ul className="flex items-center gap-[20px]">
-                                <div>
-                                    <li>
-                                        <p>Form</p>
-                                    </li>
-                                    <li>
-                                        <p>Card</p>
-                                    </li>
-                                </div>
-
-                                <div>
-                                    <li>
-                                        <p>Navbar</p>
-                                    </li>
-
-                                    <li>
-                                        <p>Button</p>
-                                    </li>
-                                </div>
-                            </ul>
+                        <div>
+                            <Link to = "/category-tools" >
+                                <p>Tools</p>
+                            </Link>
                         </div>
-                    )}
 
-                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownLanguage}>
+                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownFramework}>
                         <p className="framework">Framework</p>
-                        <IoMdArrowDropdown className={`transition-transform transform ${dropDownLanguage ? 'rotate-180' : ''}`} />
+                        <IoMdArrowDropdown className={`transition-transform transform ${dropDownFramework ? 'rotate-180' : ''}`} />
                     </div>
 
-                    {dropDownLanguage && (
-                        <div className = "dropdown-language absolute top-full right-0 mr-[40px] mt-[-20px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
+                    {dropDownFramework && (
+                        <div className = "dropdown-framework absolute top-full right-0 mr-[70px] mt-[3px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul>
                                 <li>
-                                    <p>Laravel</p>
+                                    <p className="py-[5px]">Laravel</p>
                                 </li>
                                 <li>
-                                    <p>React Js</p>
+                                    <p className="py-[5px]">React Js</p>
                                 </li>
 
                                 <li>
-                                    <p>Vue Js</p>
+                                    <p className="py-[5px]">Vue Js</p>
+                                </li>
+                                <li>
+                                    <p className="py-[5px]">Tailwind</p>
+                                </li>
+                                <li>
+                                    <p className="py-[5px]">Bootstrap</p>
                                 </li>
                             </ul>
                         </div>
