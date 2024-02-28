@@ -48,20 +48,22 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className = "flex justify-center" >
-                        <ul>
-                            <li className = "text-start w-[700px] text-[17px]" >
-                                Provide a high quality range of free tools to expedite the Frontend development process.
-                            </li>
-                            <br />
-                            <li className = "text-start w-[700px] text-[17px]" >
-                                Create a collaborative platform for sharing knowledge and experiences among Frontend developers.
-                            </li>
-                            <br />
-                            <li className = "text-start w-[700px] text-[17px]" >
-                                Support the growth and sustainability of GC Tools through ongoing development and maintenance efforts.
-                            </li>
-                        </ul>
+                    <div className = "flex justify-center mb-[10px]" >
+                        <p className = "text-start w-[700px] text-[17px]" >
+                            Provide a high quality range of free tools to expedite the Frontend development process.
+                        </p>
+                    </div>
+
+                    <div className = "flex justify-center mb-[10px]" >
+                        <p className = "text-start w-[700px] text-[17px]" >
+                            Create a collaborative platform for sharing knowledge and experiences among Frontend developers.
+                        </p>
+                    </div>
+
+                    <div className = "flex justify-center" >     
+                        <p className = "text-start w-[700px] text-[17px]" >
+                            Support the growth and sustainability of GC Tools through ongoing development and maintenance efforts.
+                        </p>
                     </div>
                 </div>
             </div>
