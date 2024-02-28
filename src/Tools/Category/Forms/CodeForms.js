@@ -53,19 +53,19 @@ const CodeForms = () => {
 
                 <div className="mb-[30px]">
                     <div className = "flex justify-center" >
-                        <p className = "text-start w-[700px]" >
+                        <p className = "max-w-[700px] w-full" >
                             {activeTab === 1 && <Html />}
                         </p>
                     </div>
 
                     <div className = "flex justify-center" >
-                        <p className = "text-start w-[700px]" >
+                        <p className = "max-w-[700px] w-full" >
                             {activeTab === 2 && <Css />}
                         </p>
                     </div>
 
                     <div className = "flex justify-center" >
-                        <p className = "text-start w-[700px]" >
+                        <p className = "max-w-[700px] w-full" >
                             {activeTab === 3 && <JavaScript />}
                         </p>
                     </div>
@@ -73,7 +73,7 @@ const CodeForms = () => {
 
                 <div>
                     <div className = "flex justify-center" >
-                        <p className="text-start w-[700px] text-[30px] font-bold">Output:</p>
+                        <p className="text-start w-[750px] text-[30px] font-bold">Output:</p>
                     </div>
                     <div className = "flex justify-center mt-[30px]" >
                         <video width="700" height="400" controls>
