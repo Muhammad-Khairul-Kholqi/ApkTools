@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Style/StyleHome.css';
 import { Link } from "react-router-dom";
-import About from "./codeKonsum";
 
 import Ilustrasi from './Assets/ilustrasi.jpg'
 import { GoArrowRight } from "react-icons/go";
@@ -43,8 +42,6 @@ const Home = () => {
                     <img className="max-w-[600px] w-full" src={Ilustrasi} draggable="false" />
                 </div>
             </div>
-
-            <About />
         </div>
     )
 }

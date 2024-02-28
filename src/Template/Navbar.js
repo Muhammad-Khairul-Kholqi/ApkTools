@@ -26,7 +26,7 @@ const Navbar = () => {
                 <div>
                     <Link to="/"> 
                         <div className="flex gap-[5px] items-center cursor-pointer">
-                            <img className="w-[40px]" src={Logo} alt="Logo" />
+                            <img className="w-[40px]" src={Logo} alt="Logo" draggable="false" />
                             <p className="text-[#3C66D4] text-[15px] leading-[17px] font-semibold">GC <br /> Tools</p>
                         </div>
                     </Link>

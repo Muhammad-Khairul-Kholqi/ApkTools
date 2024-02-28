@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './Template/Navbar'
 import Home from './Home';
+import About from "./About";
 import CategoryTools from './Tools/CategoryTools';
 
 // category tools
@@ -58,6 +59,15 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <CodeForms />
+                    </DefaultNavbar>
+                  }
+              />
+
+              <Route
+                  path = "/about-gc-tools"
+                  element={
+                    <DefaultNavbar>
+                      <About />
                     </DefaultNavbar>
                   }
               />

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const About = () => {
+const CodeKonsum = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const About = () => {
     return (
         <div>
             <div>
-                About Us
+                CodeKonsum Us
             </div>
             <div>
                 {/* Render all data received from the API */}
@@ -44,4 +44,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default CodeKonsum;

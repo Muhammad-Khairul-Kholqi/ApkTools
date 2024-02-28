@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,6 +8,7 @@ import VidSementara from '../../../Assets/vidSementara.mp4'
 import Html from './Code/Html';
 import Css from './Code/Css';
 import JavaScript from './Code/JavaScript';
+import Footer from '../../../Template/Footer';
 
 
 const CodeForms = () => {
@@ -22,7 +22,7 @@ const CodeForms = () => {
 
     return(
         <div>
-            <div className="my-[100px] px-[30px] ">
+            <div className="mt-[100px] mb-[30px] px-[30px] ">
                 <div className="flex justify-center">
                     <h1 className="font-bold text-[30px] text-start w-[700px]">Creating a Login Page UI using ReactJS and Tailwind CSS</h1>
                 </div>
@@ -33,6 +33,10 @@ const CodeForms = () => {
 
                 <div className="flex justify-center mt-[30px]">
                     <img className="w-[700px]" src={ImgSementara} />
+                </div>
+
+                <div className = "flex justify-center mt-[20px]" >
+                    <p className="text-start w-[700px] text-[30px] font-bold">Code:</p>
                 </div>
                 
                 <div className="tabs flex justify-center flex-wrap gap-[25px] py-[20px]">
@@ -76,6 +80,10 @@ const CodeForms = () => {
                             <source src={VidSementara} type="video/mp4" />
                         </video>
                     </div>
+                </div>
+
+                <div className="mt-[100px]">
+                    <Footer />
                 </div>
             </div>
         </div>

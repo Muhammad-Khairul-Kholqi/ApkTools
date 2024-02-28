@@ -1,6 +1,7 @@
 import React from "react";
 
 import CardForms from "./CardForms";
+import Footer from "../../../Template/Footer";
 
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -33,6 +34,10 @@ const Forms = () => {
 
                 <div>
                     <CardForms />
+                </div>
+
+                <div>
+                    <Footer />
                 </div>
             </div>
         </div>
