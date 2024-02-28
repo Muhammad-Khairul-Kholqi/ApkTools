@@ -60,9 +60,6 @@ const Navbar = () => {
                         <div className = "dropdown-framework absolute top-full right-0 mr-[70px] mt-[3px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul>
                                 <li>
-                                    <p className="py-[5px]">Laravel</p>
-                                </li>
-                                <li>
                                     <p className="py-[5px]">React Js</p>
                                 </li>
 

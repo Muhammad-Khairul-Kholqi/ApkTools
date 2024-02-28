@@ -76,14 +76,6 @@ const ButtonCategoryTools = () => {
                         </p>
                     </div>
                 </Link>
-
-                <Link>
-                    <div className = "py-[7px] px-[12px] border-solid border-[1px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
-                        <p>
-                            UI/UX
-                        </p>
-                    </div>
-                </Link>
             </div>
         </div>
     )

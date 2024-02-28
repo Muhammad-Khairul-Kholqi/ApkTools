@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Style/StyleHome.css';
 import { Link } from "react-router-dom";
+import About from "./codeKonsum";
 
 import Ilustrasi from './Assets/ilustrasi.jpg'
 import { GoArrowRight } from "react-icons/go";
@@ -43,6 +44,7 @@ const Home = () => {
                 </div>
             </div>
 
+            <About />
         </div>
     )
 }

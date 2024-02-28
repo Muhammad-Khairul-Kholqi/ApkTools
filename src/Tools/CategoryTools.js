@@ -1,5 +1,7 @@
 import React from "react";
 
+import Footer from "../Template/Footer";
+
 import ButtonCategoryTools from "./ButtonCategoryTools";
 import Logo from '../Assets/logo.png'
 
@@ -18,6 +20,10 @@ const CategoryTools = () => {
 
              <div className="flex justify-center mb-[20px]">
                 <img className="w-[50px]" src={Logo} draggable="false" />
+            </div>
+            
+            <div>
+                <Footer />
             </div>
         </div>
     )
