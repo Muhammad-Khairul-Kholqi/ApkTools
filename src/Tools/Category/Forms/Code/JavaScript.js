@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { anOldHope } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import {IoCopyOutline, IoCheckmarkDoneOutline} from 'react-icons/io5';
 
@@ -36,7 +37,7 @@ document.addEventListener('click', function (e) {
                 </CopyToClipboard>
             </div>
             <div className = " h-[300px] overflow-x-hidden" >
-                <SyntaxHighlighter language="html" style={materialDark} showLineNumbers>
+                <SyntaxHighlighter language="html" style={anOldHope} showLineNumbers>
                     {codeSnippet}
                 </SyntaxHighlighter>
             </div>

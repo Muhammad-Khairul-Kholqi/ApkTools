@@ -21,7 +21,7 @@ const Home = () => {
                     <p className = "description mt-[10px] text-[18px]" 
                     data-aos = "fade-down" 
                     data-aos-duration = "1000" >
-                        <span>Make</span> your <span>website</span> creation experience <span>enjoyable</span> with free tools
+                        <span>Make</span> your <span>Website</span> creation experience <span>Enjoyable</span> with free Tools
                     </p>
                 </div>
 

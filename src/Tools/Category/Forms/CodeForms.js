@@ -73,7 +73,7 @@ const CodeForms = () => {
 
                 <div>
                     <div className = "flex justify-center" >
-                        <p className="text-start w-[750px] text-[30px] font-bold">Output:</p>
+                        <p className="text-start w-[700px] text-[30px] font-bold">Output:</p>
                     </div>
                     <div className = "flex justify-center mt-[30px]" >
                         <video width="700" height="400" controls>
