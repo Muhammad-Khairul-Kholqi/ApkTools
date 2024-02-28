@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Img from '../Assets/sementara.webp';
 
 const Footer = () => {
     const CopyrightYear = new Date().getFullYear();
