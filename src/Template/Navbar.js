@@ -46,6 +46,12 @@ const Navbar = () => {
                         </div>
 
                         <div>
+                            <Link to="/blogs">
+                                <p>Blog</p>
+                            </Link>
+                        </div>
+
+                        <div>
                             <Link to = "/category-tools" >
                                 <p>Tools</p>
                             </Link>
@@ -57,7 +63,7 @@ const Navbar = () => {
                     </div>
 
                     {dropDownFramework && (
-                        <div className = "dropdown-framework absolute top-full right-0 mr-[70px] mt-[3px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
+                        <div className = "dropdown-framework absolute top-full right-0 mr-[30px] mt-[3px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul>
                                 <li>
                                     <p className="py-[5px]">React Js</p>

@@ -10,6 +10,9 @@ import CategoryTools from './Tools/CategoryTools';
 import Forms from './Tools/Category/Forms/Forms';
 import CodeForms from "./Tools/Category/Forms/CodeForms";
 
+// blogs
+import CategoryBlogs from "./Blogs/CategoryBlogs";
+
 const DefaultNavbar = ({children}) => {
   return (
     <div>
@@ -19,7 +22,7 @@ const DefaultNavbar = ({children}) => {
       {children}
     </div>
   )
-}
+};
 
 function App() {
   return (
@@ -59,6 +62,16 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <CodeForms />
+                    </DefaultNavbar>
+                  }
+              />
+
+              {/* blogs */}
+              <Route
+                  path = "/blogs"
+                  element={
+                    <DefaultNavbar>
+                      <CategoryBlogs />
                     </DefaultNavbar>
                   }
               />
