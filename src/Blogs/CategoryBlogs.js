@@ -1,6 +1,7 @@
 import React from "react";
 
 import AllExplanation from "./Explanation/AllExplanation";
+import CardLearning from "./Learning/CardLearning";
 
 const CategoryBlogs = () => {
     return(
@@ -9,7 +10,7 @@ const CategoryBlogs = () => {
                 <div>
                     <div className = "flex justify-center" >
                         <h1 className = "text-start w-[750px] text-[30px] mb-[20px]" >
-                            Explanation 
+                            FAQ 
                         </h1> 
                     </div>
                     <AllExplanation /> 
@@ -21,6 +22,7 @@ const CategoryBlogs = () => {
                             Learning Resources
                         </h1> 
                     </div>
+                    <CardLearning />
                 </div>
             </div>
         </div>
