@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Logo from '../Assets/logo.png';
 import { IoMdArrowDropdown } from "react-icons/io";
-import { IoMenu } from "react-icons/io5";
+import { CgMenuRight } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
@@ -83,7 +83,7 @@ const Navbar = () => {
                     )}
                 </div>
                 <div className="hidden text-[25px]">
-                    <IoMenu id="hamburger-menu" style={{ display: showNav ? 'none' : 'block' }} onClick={toggleNav} />
+                    <CgMenuRight id="hamburger-menu" style={{ display: showNav ? 'none' : 'block' }} onClick={toggleNav} />
                     <IoClose id="close" style={{ display: showNav ? 'block' : 'none' }} onClick={toggleNav} />
                 </div>
             </div>
