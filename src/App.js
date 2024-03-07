@@ -84,7 +84,6 @@ function App() {
                     </DefaultNavbar>
                   }
               />
-
           </Routes>
       </Router>
     </div>

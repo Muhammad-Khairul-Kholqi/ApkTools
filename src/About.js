@@ -19,7 +19,7 @@ const About = () => {
                         <p className = "text-start w-[700px] text-[17px] mt-[20px]" >
                             GC Tools is a Website that provides Free Tools that can make it easier
                             for a Frontend Person to build a Website,
-                            <span className="font-semibold italic">in Indonesian GC means Fast Movement </span> 
+                            <span className="font-semibold italic">in Indonesian GC means Gerak Cepat </span> 
                             the Intention is to make the Website more Developer Friendly and Efficient.
                         </p>
                     </div>
