@@ -13,7 +13,7 @@ const Footer = () => {
                     </p>
                 </Link>
 
-                <Link to="">
+                <Link to="/contact-gc-tools">
                     <p className = "hover:text-blue-600" >
                         Contact
                     </p>

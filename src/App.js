@@ -5,13 +5,13 @@ import Navbar from './Template/Navbar'
 import Home from './Home';
 import About from "./About";
 import CategoryTools from './Tools/CategoryTools';
+import CategoryBlogs from "./Blogs/CategoryBlogs";
+import Contact from "./Contact";
 
 // category tools
 import Forms from './Tools/Category/Forms/Forms';
 import CodeForms from "./Tools/Category/Forms/CodeForms";
 
-// blogs
-import CategoryBlogs from "./Blogs/CategoryBlogs";
 
 const DefaultNavbar = ({children}) => {
   return (
@@ -81,6 +81,15 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <About />
+                    </DefaultNavbar>
+                  }
+              />
+
+              <Route
+                  path = "/contact-gc-tools"
+                  element={
+                    <DefaultNavbar>
+                      <Contact />
                     </DefaultNavbar>
                   }
               />

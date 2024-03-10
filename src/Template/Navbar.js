@@ -33,31 +33,31 @@ const Navbar = () => {
                 </div>
 
                 <div className = {`navbar-nav-link flex gap-[20px] items-center ${showNav ? 'show' : ''}`} >
-                        <div className="first">
+                        <div className="first hover:text-blue-600">
                             <Link to="/">
                                 <p>Home</p>
                             </Link>
                         </div>
 
-                        <div>
+                        <div className="hover:text-blue-600">
                             <Link to="">
                                 <p>All</p>
                             </Link>
                         </div>
 
-                        <div>
+                        <div className="hover:text-blue-600">
                             <Link to="/blogs">
                                 <p>Blog</p>
                             </Link>
                         </div>
 
-                        <div>
+                        <div className="hover:text-blue-600">
                             <Link to = "/category-tools" >
                                 <p>Tools</p>
                             </Link>
                         </div>
 
-                    <div className="flex gap-[5px] items-center cursor-pointer" onClick={toggleDropdownFramework}>
+                    <div className="flex gap-[5px] items-center cursor-pointer hover:text-blue-600" onClick={toggleDropdownFramework}>
                         <p className="framework">Framework</p>
                         <IoMdArrowDropdown className={`transition-transform transform ${dropDownFramework ? 'rotate-180' : ''}`} />
                     </div>
@@ -66,17 +66,25 @@ const Navbar = () => {
                         <div className = "dropdown-framework absolute top-full right-0 mr-[30px] mt-[3px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul>
                                 <li>
-                                    <p className="py-[5px]">React Js</p>
+                                    <Link>
+                                        <p className="py-[5px] hover:text-blue-600">React Js</p>
+                                    </Link>
                                 </li>
 
                                 <li>
-                                    <p className="py-[5px]">Vue Js</p>
+                                    <Link>
+                                        <p className="py-[5px] hover:text-blue-600">Vue Js</p>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <p className="py-[5px]">Tailwind</p>
+                                    <Link>
+                                        <p className="py-[5px] hover:text-blue-600">Tailwind</p>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <p className="py-[5px]">Bootstrap</p>
+                                    <Link>
+                                        <p className="py-[5px] hover:text-blue-600">Bootstrap</p>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

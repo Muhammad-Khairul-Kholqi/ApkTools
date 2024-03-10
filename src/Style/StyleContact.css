@@ -1,0 +1,9 @@
+@media (max-width:550px) {
+    .container-contact {
+        display: block;
+    }
+
+    .sosmed {
+        margin-top: 20px;
+    }
+}
