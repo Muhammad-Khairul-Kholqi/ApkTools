@@ -1,5 +1,7 @@
 import React from "react";
 
+import Footer from "./Template/Footer";
+
 const About = () => {
     return(
         <div>
@@ -67,6 +69,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+           <div className="mt-[100px]">
+             <Footer />
+           </div>
         </div>
     )
 }

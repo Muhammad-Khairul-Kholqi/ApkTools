@@ -2,6 +2,7 @@ import React from "react";
 
 import AllExplanation from "./Explanation/AllExplanation";
 import CardLearning from "./Learning/CardLearning";
+import Footer from "../Template/Footer";
 
 const CategoryBlogs = () => {
     return(
@@ -24,6 +25,9 @@ const CategoryBlogs = () => {
                     </div>
                     <CardLearning />
                 </div>
+            </div>
+            <div className="mt-[100px]">
+                <Footer />
             </div>
         </div>
     )

@@ -4,8 +4,9 @@ import Footer from "./Template/Footer";
 import "./Style/StyleContact.css";
 
 import { GrInstagram } from "react-icons/gr";
-import { BsWhatsapp } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import { FaTiktok } from "react-icons/fa";
 
 const Contact = () => {
     return(
@@ -53,23 +54,30 @@ const Contact = () => {
                     </div>
                     <div className="mt-[20px] flex flex-wrap justify-center gap-[30px] bg-white shadow border-t-[5px] border-blue-600 p-[20px] w-full rounded-[5px]">
                         <Link>
-                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] w-full p-[10px] rounded-[5px]">
+                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] p-[10px] rounded-[5px]">
                                 <GrInstagram className="text-[30px]" />
                                 <p className="mt-2">Instagram</p>
                             </div>
                         </Link>
 
                         <Link>
-                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] w-full p-[10px] rounded-[5px]">
+                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] p-[10px] rounded-[5px]">
                                 <CgMail className="text-[30px]" />
                                 <p className="mt-2">Email</p>
                             </div>
                         </Link>
 
                         <Link>
-                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] w-full p-[10px] rounded-[5px]">
-                                <BsWhatsapp className="text-[30px]" />
-                                <p className="mt-2">Whatsapp</p>
+                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] p-[10px] rounded-[5px]">
+                                <FaFacebookF className="text-[30px]" />
+                                <p className="mt-2">Facebook</p>
+                            </div>
+                        </Link>
+
+                        <Link>
+                             <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] p-[10px] rounded-[5px]">
+                                <FaTiktok className="text-[30px]" />
+                                <p className="mt-2">Tik Tok</p>
                             </div>
                         </Link>
                     </div>
