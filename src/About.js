@@ -6,8 +6,8 @@ const About = () => {
     return(
         <div>
             <div className="mt-[100px] mb-[50px] px-[30px]">
-                <div className="text-center">
-                    <h1 className="text-[30px] font-bold text-gray-700">About</h1>
+                <div className="flex justify-center">
+                    <h1 className="text-start w-[700px] text-[30px] font-bold text-black">About</h1>
                 </div>
 
                 <div className = "mt-[20px]" >

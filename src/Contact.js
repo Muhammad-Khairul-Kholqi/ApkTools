@@ -11,7 +11,7 @@ import { FaTiktok } from "react-icons/fa";
 const Contact = () => {
     return(
         <div>
-            <div className="container-contact mt-[100px] px-[50px] flex justify-center gap-[40px]">
+            <div className="container-contact mt-[100px] px-[30px] flex justify-center gap-[70px]">
                 <div className="bg-white rounded-[5px] shadow border-t-[5px] border-blue-600 p-[20px] w-full">
                     <form>
                         <div className="flex justify-center gap-[10px]">
@@ -77,7 +77,7 @@ const Contact = () => {
                         <Link>
                              <div className="text-center flex flex-col items-center bg-white border hover:shadow w-[100px] p-[10px] rounded-[5px]">
                                 <FaTiktok className="text-[30px]" />
-                                <p className="mt-2">Tik Tok</p>
+                                <p className="mt-2">TikTok</p>
                             </div>
                         </Link>
                     </div>

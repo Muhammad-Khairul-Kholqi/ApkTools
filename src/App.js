@@ -7,10 +7,14 @@ import About from "./About";
 import CategoryTools from './Tools/CategoryTools';
 import CategoryBlogs from "./Blogs/CategoryBlogs";
 import Contact from "./Contact";
+import All from "./All";
 
 // category tools
 import Forms from './Tools/Category/Forms/Forms';
 import CodeForms from "./Tools/Category/Forms/CodeForms";
+
+// quiz
+import CategoryQuiz from "./Quiz/CategoryQuiz";
 
 
 const DefaultNavbar = ({children}) => {
@@ -43,6 +47,15 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <CategoryTools />
+                    </DefaultNavbar>
+                  }
+              />
+
+              <Route
+                  path = "/all-data-tools-framework"
+                  element={
+                    <DefaultNavbar>
+                      <All />
                     </DefaultNavbar>
                   }
               />
@@ -90,6 +103,16 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <Contact />
+                    </DefaultNavbar>
+                  }
+              />
+
+              {/* quiz */}
+              <Route
+                  path = "/category-quiz"
+                  element={
+                    <DefaultNavbar>
+                      <CategoryQuiz />
                     </DefaultNavbar>
                   }
               />

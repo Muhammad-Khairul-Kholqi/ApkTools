@@ -25,10 +25,10 @@ const Home = () => {
                     </p>
                 </div>
 
-                <Link to="">
+                <Link to="/all-data-tools-framework">
                     <div className = "flex justify-center mt-[20px]">
                         <button className = "flex items-center gap-[5px] py-[7px] px-[10px] border-solid border-2 border-black rounded-[30px]"
-                        data-aos = "zoom-in"
+                        data-aos = "zoo~m-in"
                         data-aos-duration = "1000" >
                             <p>Get Started</p>
                             <GoArrowRight id="arrow" className="icon-arrow text-[20px] mt-[1px]" />

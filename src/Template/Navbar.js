@@ -40,7 +40,7 @@ const Navbar = () => {
                         </div>
 
                         <div className="hover:text-blue-600">
-                            <Link to="">
+                            <Link to="/all-data-tools-framework">
                                 <p>All</p>
                             </Link>
                         </div>
@@ -57,12 +57,18 @@ const Navbar = () => {
                             </Link>
                         </div>
 
-                    <div className="flex gap-[5px] items-center cursor-pointer hover:text-blue-600" onClick={toggleDropdownFramework}>
+                        <div className="hover:text-blue-600">
+                            <Link to = "/category-quiz" >
+                                <p>Quiz</p>
+                            </Link>
+                        </div>
+
+                    {/* <div className="flex gap-[5px] items-center cursor-pointer hover:text-blue-600" onClick={toggleDropdownFramework}>
                         <p className="framework">Framework</p>
                         <IoMdArrowDropdown className={`transition-transform transform ${dropDownFramework ? 'rotate-180' : ''}`} />
-                    </div>
+                    </div> */}
 
-                    {dropDownFramework && (
+                    {/* {dropDownFramework && (
                         <div className = "dropdown-framework absolute top-full right-0 mr-[30px] mt-[3px] bg-white shadow-md rounded-md p-5 text-[15px] z-50" >
                             <ul>
                                 <li>
@@ -88,7 +94,7 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         </div>
-                    )}
+                    )} */}
                 </div>
                 <div className="hidden text-[25px]">
                     <CgMenuRight id="hamburger-menu" style={{ display: showNav ? 'none' : 'block' }} onClick={toggleNav} />
