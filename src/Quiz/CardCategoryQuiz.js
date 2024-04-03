@@ -11,7 +11,7 @@ const CardCategoryQuiz = () => {
             <div className="mt-[70px] mb-[100px]">
                 <div className="flex justify-center gap-[20px] px-[20px] flex-wrap">
                     <Link>
-                        <div className="bg-white shadow-lg rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -51,7 +51,7 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white shadow-lg rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -91,7 +91,7 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white shadow-lg rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -131,7 +131,7 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white shadow-lg rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -171,7 +171,7 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white shadow-lg rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -211,7 +211,7 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white shadow-lg rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
