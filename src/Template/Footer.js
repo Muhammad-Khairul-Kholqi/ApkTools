@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center mb-[20px] text-gray-600">
-                <p>Copyright © {CopyrightYear} - GC Tools</p>
+                <p>© Copyright {CopyrightYear} - GC Tools</p>
             </div>
         </div>
     );

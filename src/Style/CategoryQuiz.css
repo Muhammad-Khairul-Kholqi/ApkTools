@@ -1,0 +1,14 @@
+.quiz-line {
+    position: relative;
+}
+
+.quiz-line::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 10px;
+    width: 100%; 
+    height: 2px; 
+    background-color: blue; 
+    border-radius: 50%; 
+}

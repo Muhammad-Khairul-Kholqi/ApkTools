@@ -1,14 +1,26 @@
 import React from "react";
 import CardCategoryQuiz from "./CardCategoryQuiz";
+import "../Style/CategoryQuiz.css"; // Import file CSS untuk styling tambahan
+import { Link } from "react-router-dom";
 
 const CategoryQuiz = () => {
     return (
         <div>
             <div className="mt-[100px]">
-                <div className="text-center">
-                    <p className="font-bold text-[25px]">Category Quizzz</p>
-                    <p className="mt-[10px]">Choose the quiz below, master it and improve your skills.</p>
+                <div className="text-center px-[20px]">
+                    <p className="font-bold text-[25px]">
+                        Category <span className="quiz-line">Quizzz</span>
+                    </p>
+
+                    <p className="mt-[10px]">Choose the quiz below, master it, improve your skills and become the top of the standings.</p>
+                    
+                    <Link to="">
+                        <button className="mt-[30px] border border-1 px-[10px] py-[5px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
+                            Standings Board
+                        </button>
+                    </Link>
                 </div>
+
 
                 <div>
                     <CardCategoryQuiz />
