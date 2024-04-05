@@ -15,6 +15,7 @@ import CodeForms from "./Tools/Category/Forms/CodeForms";
 
 // quiz
 import CategoryQuiz from "./Quiz/CategoryQuiz";
+import Standings from "./Quiz/StandingsBoard/Standings";
 
 
 const DefaultNavbar = ({children}) => {
@@ -113,6 +114,15 @@ function App() {
                   element={
                     <DefaultNavbar>
                       <CategoryQuiz />
+                    </DefaultNavbar>
+                  }
+              />
+
+              <Route
+                  path = "/quizz-standings-board"
+                  element={
+                    <DefaultNavbar>
+                      <Standings />
                     </DefaultNavbar>
                   }
               />

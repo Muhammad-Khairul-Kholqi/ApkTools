@@ -16,7 +16,7 @@ const CategoryQuiz = () => {
                     <p className="mt-[10px]">Choose the quiz below, master it, improve your skills and become the top of the standings.</p>
                     
                     <div className="flex justify-center">
-                        <Link to="">
+                        <Link to="/quizz-standings-board">
                             <button className="flex flex-col items-center mt-[30px] border border-1 px-[10px] py-[5px] border-gray-600 text-gray-600 hover:border-[#1C57D5] hover:text-[#1C57D5]">
                                 <PiMedal />
                                 <p>Standings Board</p>
