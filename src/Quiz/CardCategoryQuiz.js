@@ -4,14 +4,19 @@ import { GoClock } from "react-icons/go";
 import { GoPencil } from "react-icons/go";
 import { Link } from "react-router-dom";
 import Footer from "../Template/Footer";
+import AOS from 'aos';
 
 const CardCategoryQuiz = () => {
+    AOS.init();
     return (
         <div>
             <div className="mt-[70px] mb-[100px]">
                 <div className="flex justify-center gap-[20px] px-[20px] flex-wrap">
                     <Link>
-                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]"
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                        >
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -21,7 +26,7 @@ const CardCategoryQuiz = () => {
 
                             <div className="px-[20px] mt-[20px]">
                                 <p className="flex flex-wrap w-[250px] font-bold">
-                                    Basic of CSS Quiz #2{" "}
+                                    Basic of CSS Quiz #2 
                                 </p>
                                 <div className="flex justify-between mb-[10px] text-blue-700">
                                     <div className="flex items-center gap-[5px] mt-[10px]">
@@ -51,7 +56,10 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]"
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                        >
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -60,8 +68,8 @@ const CardCategoryQuiz = () => {
                             </div>
 
                             <div className="px-[20px] mt-[20px]">
-                                <p className="flex flex-wrap w-[250px] font-bold">
-                                    Basic of CSS Quiz #2{" "}
+                                <p className="flex flex-wrap w-[250px] font-bold line-clamp-2 overflow-hidden">
+                                    Basic of CSS Quiz #2
                                 </p>
                                 <div className="flex justify-between mb-[10px] text-blue-700">
                                     <div className="flex items-center gap-[5px] mt-[10px]">
@@ -91,7 +99,10 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]"
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                        >
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -100,8 +111,8 @@ const CardCategoryQuiz = () => {
                             </div>
 
                             <div className="px-[20px] mt-[20px]">
-                                <p className="flex flex-wrap w-[250px] font-bold">
-                                    Basic of CSS Quiz #2{" "}
+                                <p className="flex flex-wrap w-[250px] font-bold line-clamp-2 overflow-hidden">
+                                    Basic of CSS Quiz #2
                                 </p>
                                 <div className="flex justify-between mb-[10px] text-blue-700">
                                     <div className="flex items-center gap-[5px] mt-[10px]">
@@ -131,7 +142,10 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]"
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                        >
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -140,8 +154,8 @@ const CardCategoryQuiz = () => {
                             </div>
 
                             <div className="px-[20px] mt-[20px]">
-                                <p className="flex flex-wrap w-[250px] font-bold">
-                                    Basic of CSS Quiz #2{" "}
+                                <p className="flex flex-wrap w-[250px] font-bold line-clamp-2 overflow-hidden">
+                                    Basic of CSS Quiz #2
                                 </p>
                                 <div className="flex justify-between mb-[10px] text-blue-700">
                                     <div className="flex items-center gap-[5px] mt-[10px]">
@@ -171,7 +185,10 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]"
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                        >
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -180,8 +197,8 @@ const CardCategoryQuiz = () => {
                             </div>
 
                             <div className="px-[20px] mt-[20px]">
-                                <p className="flex flex-wrap w-[250px] font-bold">
-                                    Basic of CSS Quiz #2{" "}
+                                <p className="flex flex-wrap w-[250px] font-bold line-clamp-2 overflow-hidden">
+                                    Basic of CSS Quiz #2
                                 </p>
                                 <div className="flex justify-between mb-[10px] text-blue-700">
                                     <div className="flex items-center gap-[5px] mt-[10px]">
@@ -211,7 +228,10 @@ const CardCategoryQuiz = () => {
                     </Link>
 
                     <Link>
-                        <div className="bg-white border border-1 shadow rounded-b-[5px]">
+                        <div className="bg-white border border-1 shadow rounded-b-[5px]"
+                            data-aos="zoom-in"
+                            data-aos-duration="1500"
+                        >
                             <div className="relative overflow-hidden">
                                 <img
                                     src={imageSementara}
@@ -220,8 +240,8 @@ const CardCategoryQuiz = () => {
                             </div>
 
                             <div className="px-[20px] mt-[20px]">
-                                <p className="flex flex-wrap w-[250px] font-bold">
-                                    Basic of CSS Quiz #2{" "}
+                                <p className="flex flex-wrap w-[250px] font-bold line-clamp-2 overflow-hidden">
+                                    Basic of CSS Quiz #2
                                 </p>
                                 <div className="flex justify-between mb-[10px] text-blue-700">
                                     <div className="flex items-center gap-[5px] mt-[10px]">

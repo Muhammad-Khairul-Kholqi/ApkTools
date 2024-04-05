@@ -44,22 +44,38 @@ const Home = () => {
                 </div>
 
                 <div className="flex justify-center gap-[20px] flex-wrap  p-[20px] rounded-[10px] text-start">
-                    <div className="p-[10px] border border-1 cursor-pointer rounded-[5px]">
+                    <div 
+                        className="p-[10px] border border-1 rounded-[5px]"
+                        data-aos="zoom-in"
+                        data-aos-duration = "1500"    
+                    >
                         <FaCheckCircle className="text-[30px] mb-[10px] text-blue-700" />
                         <p className="w-[150px] font-bold text-[14px] text-black">Makes it easier to create a website</p>
                     </div>
 
-                    <div className="p-[10px] border border-1 cursor-pointer rounded-[5px]">
+                    <div 
+                        className="p-[10px] border border-1 rounded-[5px]"
+                        data-aos="zoom-in"
+                        data-aos-duration = "1500"    
+                    >
                         <FaCheckCircle className="text-[30px] mb-[10px] text-blue-700" />
                         <p className="w-[150px] font-bold text-[14px] text-black">Add insight with the quiz feature</p>
                     </div>
 
-                    <div className="p-[10px] border border-1 cursor-pointer rounded-[5px]">
+                    <div 
+                        className="p-[10px] border border-1 rounded-[5px]"
+                        data-aos="zoom-in"
+                        data-aos-duration = "1500"    
+                    >
                         <FaCheckCircle className="text-[30px] mb-[10px] text-blue-700" />
                         <p className="w-[150px] font-bold text-[14px] text-black">Provides learning channels from masters</p>
                     </div>
 
-                    <div className="p-[10px] border border-1 cursor-pointer rounded-[5px]">
+                    <div 
+                        className="p-[10px] border border-1 rounded-[5px]"
+                        data-aos="zoom-in"
+                        data-aos-duration = "1500"    
+                    >
                         <FaCheckCircle className="text-[30px] mb-[10px] text-blue-700" />
                         <p className="w-[150px] font-bold text-[14px] text-black">Displays frequently asked questions</p>
                     </div>
